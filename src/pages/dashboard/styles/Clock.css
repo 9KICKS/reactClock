@@ -1,0 +1,149 @@
+* {
+    background: black;
+}
+
+.analog-clock {
+    width: 300px;
+    height: 300px;
+    border-radius: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    color: #444;
+    text-align: center;
+    background: white;
+}
+
+.analog-clock::after {
+    background: #aaa;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+}
+
+.seconds {
+    position: absolute;
+    width: 2px;
+    height: 118px;
+    background: red;
+    top: 10.5%;
+    left: 50%;
+    transform-origin: bottom;
+}
+
+.minutes {
+    position: absolute;
+    width: 4px;
+    height: 80px;
+    background: #444;
+    top: 22.5%;
+    left: 49%;
+    transform-origin: bottom;
+}
+
+.hours {
+    position: absolute;
+    width: 6px;
+    height: 60px;
+    background: #222;
+    top: 30%;
+    left: 49%;
+    transform-origin: bottom;
+}
+
+.analog-clock span {
+    position: absolute;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+}
+
+.twelve {
+    top: 10px;
+    left: 46%;
+    background: transparent;
+}
+
+.one {
+    top: 10%;
+    right: 26%;
+    background: transparent;
+}
+
+.eleven {
+    top: 10%;
+    left: 26%;
+    background: transparent;
+}
+
+.two {
+    top: 25%;
+    right: 10%;
+    background: transparent;
+}
+
+.three {
+    right: 10px;
+    top: 46%;
+    background: transparent;
+}
+
+.four {
+    right: 30px;
+    top: 67%;
+    background: transparent;
+}
+
+.five {
+    right: 78px;
+    top: 80%;
+    background: transparent;
+}
+
+.six {
+    bottom: 10px;
+    left: 50%;
+    background: transparent;
+}
+
+.seven {
+    left: 80px;
+    top: 82%;
+    background: transparent;
+}
+
+.eight {
+    left: 30px;
+    top: 67%;
+    background: transparent;
+}
+
+.nine {
+    left: 10px;
+    top: 46%;
+    background: transparent;
+}
+
+.ten {
+    top: 25%;
+    left: 10%;
+    background: transparent;
+}
+
+.digital-clock {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px black;
+    margin-top: 300px;
+}
